@@ -97,7 +97,13 @@ key: value
 
 ## Footnotes
 
-
+<script src="https://utteranc.es/client.js"
+        repo="[ENTER REPO HERE]"
+        issue-term="pathname"
+        theme="icy-dark"
+        crossorigin="anonymous"
+        async>
+</script>
 
 [^1]: This is the footnote.
 
