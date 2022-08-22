@@ -94,9 +94,6 @@ key: value
 
 {% twitter https://twitter.com/jakevdp/status/1204765621767901185?s=20 %}
 
-
-## Footnotes
-
 <script src="https://utteranc.es/client.js"
         repo="[ENTER REPO HERE]"
         issue-term="pathname"
@@ -104,6 +101,8 @@ key: value
         crossorigin="anonymous"
         async>
 </script>
+
+## Footnotes
 
 [^1]: This is the footnote.
 
