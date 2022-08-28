@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      2 min read
     
 </span></p>
 
@@ -240,6 +240,72 @@ Double division with 17.0/24.0 is: 0.71
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Celsius-to-Fahrenheit-Converter">Celsius to Fahrenheit Converter<a class="anchor-link" href="#Celsius-to-Fahrenheit-Converter"> </a></h3>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">CtoF</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+  
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Celsius to Fahrenheit Converter:&quot;</span><span class="p">);</span>
+
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Degrees Celsius: 55 --&gt;&quot;</span><span class="p">);</span>
+      <span class="kt">int</span> <span class="n">celsius</span> <span class="o">=</span> <span class="mi">55</span><span class="p">;</span>
+      <span class="kt">int</span> <span class="n">fahrenheit</span> <span class="o">=</span> <span class="p">((</span><span class="n">celsius</span><span class="o">*</span><span class="mi">9</span><span class="p">)</span><span class="o">/</span><span class="mi">5</span><span class="p">)</span><span class="o">+</span><span class="mi">32</span><span class="p">;</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;\tDegrees Fahrenheit: &quot;</span> <span class="o">+</span> <span class="n">fahrenheit</span><span class="p">);</span>
+
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Degrees Celsius: 78 --&gt;&quot;</span><span class="p">);</span>
+      <span class="kt">int</span> <span class="n">celsius1</span> <span class="o">=</span> <span class="mi">78</span><span class="p">;</span>
+      <span class="kt">int</span> <span class="n">fahrenheit1</span> <span class="o">=</span> <span class="p">((</span><span class="n">celsius1</span><span class="o">*</span><span class="mi">9</span><span class="p">)</span><span class="o">/</span><span class="mi">5</span><span class="p">)</span><span class="o">+</span><span class="mi">32</span><span class="p">;</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;\tDegrees Fahrenheit: &quot;</span> <span class="o">+</span> <span class="n">fahrenheit1</span><span class="p">);</span>
+
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Degrees Celsius: 11 --&gt;&quot;</span><span class="p">);</span>
+      <span class="kt">int</span> <span class="n">celsius2</span> <span class="o">=</span> <span class="mi">11</span><span class="p">;</span>
+      <span class="kt">int</span> <span class="n">fahrenheit2</span> <span class="o">=</span> <span class="p">((</span><span class="n">celsius2</span><span class="o">*</span><span class="mi">9</span><span class="p">)</span><span class="o">/</span><span class="mi">5</span><span class="p">)</span><span class="o">+</span><span class="mi">32</span><span class="p">;</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;\tDegrees Fahrenheit: &quot;</span> <span class="o">+</span> <span class="n">fahrenheit2</span><span class="p">);</span>
+    
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="c1">// makes it so you can print the code&#39;s output</span>
+  <span class="n">CtoF</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Celsius to Fahrenheit Converter:
+Degrees Celsius: 55 --&gt;
+	Degrees Fahrenheit: 131
+Degrees Celsius: 78 --&gt;
+	Degrees Fahrenheit: 172
+Degrees Celsius: 11 --&gt;
+	Degrees Fahrenheit: 51
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Inputting-primitive-data:">Inputting primitive data:<a class="anchor-link" href="#Inputting-primitive-data:"> </a></h3>
 </div>
 </div>
@@ -317,79 +383,11 @@ Double division with 17.0/24.0 is: 0.71
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Enter an integer: Not an integer (form like 159), java.util.InputMismatchException
-Enter a double: 0.0
+<pre>Enter an integer: 2
+Enter a double: 2.0
 Enter a boolean: true
-Enter a String: wewew
+Enter a String: hi
 </pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">CtoF</span> <span class="p">{</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-  
-      
-      <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Enter degrees Celsius: &quot;</span><span class="p">);</span>
-      <span class="k">try</span> <span class="p">{</span>
-        <span class="kt">int</span> <span class="n">sampleInputInt</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">sampleInputInt</span><span class="p">);</span>
-    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// if not an integer of degrees celsius</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Not an integer degree Celsius (form like 30), &quot;</span> <span class="o">+</span> <span class="n">e</span><span class="p">);</span>
-    <span class="p">}</span>
-    <span class="n">input</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
-      
-    <span class="p">}</span>
-  <span class="p">}</span>
-  <span class="c1">// makes it so you can print the code&#39;s output</span>
-  <span class="n">CtoF</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-black-intense-fg ansi-bold">|   </span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">public class CtoF {</span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    public static void main(String[] args) {</span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">  </span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">      input = new Scanner(System.in);</span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">      System.out.print(&#34;Enter degrees Celsius: &#34;);</span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">      try {</span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        int sampleInputInt = input.nextInt();</span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        System.out.println(sampleInputInt);</span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    } catch (Exception e) {  // if not an integer of degrees celsius</span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        System.out.println(&#34;Not an integer degree Celsius (form like 30), &#34; + e);</span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    }</span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    input.close();</span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">      </span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    }</span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">  }</span>
-<span class="ansi-red-intense-fg ansi-bold">Unresolved dependencies:</span>
-<span class="ansi-red-intense-fg ansi-bold">   - variable input</span></pre>
 </div>
 </div>
 
