@@ -35,10 +35,10 @@
   
     
         ,"post3": {
-            "title": "Example Markdown Post",
-            "content": "Example Markdown Post . Lists . Here’s a list: . item 1 | item 2 | . And a numbered list: . item 1 | item 2 | Boxes and stuff . This is a quotation . . You can include alert boxes …and… . . You can include info boxes Images . . Code . You can format text and code per usual . General preformatted text: . # Do a thing do_thing() .",
-            "url": "https://saathvika-ajith.github.io/APCSA-Fastpages/markdown/2022/08/22/new-page-markdown-post.html",
-            "relUrl": "/markdown/2022/08/22/new-page-markdown-post.html",
+            "title": "Java Notebook",
+            "content": "public class Hello { public static void main(String[] args) { System.out.println(&quot;Hello World!&quot;); } } Hello.main(null); . Hello World! .",
+            "url": "https://saathvika-ajith.github.io/APCSA-Fastpages/fastpages/jupyter/2022/08/22/java.html",
+            "relUrl": "/fastpages/jupyter/2022/08/22/java.html",
             "date": " • Aug 22, 2022"
         }
         
@@ -46,11 +46,11 @@
   
     
         ,"post4": {
-            "title": "Java Notebook",
-            "content": "public class Hello { public static void main(String[] args) { System.out.println(&quot;Hello World!&quot;); } } Hello.main(null); . Hello World! .",
-            "url": "https://saathvika-ajith.github.io/APCSA-Fastpages/fastpages/jupyter/2022/08/22/java.html",
-            "relUrl": "/fastpages/jupyter/2022/08/22/java.html",
-            "date": " • Aug 22, 2022"
+            "title": "Example Markdown Post",
+            "content": "Example Markdown Post . Lists . Here’s a list: . item 1 | item 2 | . And a numbered list: . item 1 | item 2 | Boxes and stuff . This is a quotation . . You can include alert boxes …and… . . You can include info boxes Images . . Code . You can format text and code per usual . General preformatted text: . # Do a thing do_thing() .",
+            "url": "https://saathvika-ajith.github.io/APCSA-Fastpages/markdown/2022/08/20/new-page-markdown-post.html",
+            "relUrl": "/markdown/2022/08/20/new-page-markdown-post.html",
+            "date": " • Aug 20, 2022"
         }
         
     
