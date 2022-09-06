@@ -1,5 +1,5 @@
 ---
-title: Grade Calculator
+title: Grades Calculator
 layout: default
 description: Supports grade inputs and calculates average. 
 permalink: /organization/grades
@@ -20,14 +20,14 @@ tags: [javascript, html, input, onblur]
     </header>
     <form>
         <!-- Totals -->
-        <div class="form-group row">
+        <div class="form-group row" style="color: #c44282; font-size: 24px">
             Total : <span id="total" class="label label-primary">0.0</span>
             Count : <span id="count" class="label label-primary">0.0</span>
             Average : <span id="average" class="label label-primary">0.0</span>
         </div>
         <!-- Rows -->
         <div class="form-group row">
-            Input scores, press tab to add new number:
+            <h4>Input scores, press tab to add new number:</h4>
             <div id="scores">
                 <input onblur="calculator()" type="text" name="score" id="score0"/><br>
                 <!-- javascript generated inputs -->
