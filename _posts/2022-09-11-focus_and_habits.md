@@ -1,5 +1,5 @@
 ---
-toc: true
+toc: false
 layout: post
 categories: [markdown]
 title: Focus and Habits
