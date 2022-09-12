@@ -7,6 +7,8 @@ comments: true
 permalink: humanwork/focus-and-habits
 ---
 
+{% include mini_navbar2.html %}
+
 # Psychology and the Good Life, by Laurie Santos
 
 ### Main Points of the Video
