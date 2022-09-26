@@ -65,9 +65,9 @@ comments: true
         const emotion = document.createElement("td");
         const symbolism = document.createElement("td");
 
-        name.innerHTML = row.name;
-        emotion.innerHTML = row.emotion; 
-        symbolism.innerHTML = row.symbolism; 
+        name.innerHTML = row.emotion;
+        emotion.innerHTML = row.symbolism; 
+        symbolism.innerHTML = row.name; 
 
 
         tr.appendChild(symbolism);
