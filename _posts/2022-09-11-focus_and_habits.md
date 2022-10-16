@@ -4,10 +4,8 @@ layout: post
 categories: [markdown]
 title: Focus and Habits
 comments: true
-permalink: humanwork/focus-and-habits
+permalink: focus-and-habits
 ---
-
-{% include mini_navbar2.html %}
 
 # Psychology and the Good Life, by Laurie Santos
 
