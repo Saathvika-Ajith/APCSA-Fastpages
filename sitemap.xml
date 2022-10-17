@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://saathvika-ajith.github.io/APCSA-Fastpages/markdown/2022/08/20/new-page-markdown-post.html</loc>
-<lastmod>2022-08-20T00:00:00-05:00</lastmod>
-</url>
-<url>
 <loc>https://saathvika-ajith.github.io/APCSA-Fastpages/fastpages/jupyter/2022/08/22/java.html</loc>
 <lastmod>2022-08-22T00:00:00-05:00</lastmod>
 </url>
@@ -49,7 +45,7 @@
 <lastmod>2022-09-05T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://saathvika-ajith.github.io/APCSA-Fastpages/humanwork/focus-and-habits</loc>
+<loc>https://saathvika-ajith.github.io/APCSA-Fastpages/focus-and-habits</loc>
 <lastmod>2022-09-11T00:00:00-05:00</lastmod>
 </url>
 <url>
@@ -109,15 +105,12 @@
 <lastmod>2022-10-02T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://saathvika-ajith.github.io/APCSA-Fastpages/organization/week7</loc>
+<loc>https://saathvika-ajith.github.io/APCSA-Fastpages/fastpages/jupyter/2022/10/09/array-lists.html</loc>
 <lastmod>2022-10-09T00:00:00-05:00</lastmod>
 </url>
 <url>
-<loc>https://saathvika-ajith.github.io/APCSA-Fastpages/fastpages/jupyter/2022/12/09/array-lists.html</loc>
-<lastmod>2022-12-09T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>https://saathvika-ajith.github.io/APCSA-Fastpages/humanwork/</loc>
+<loc>https://saathvika-ajith.github.io/APCSA-Fastpages/organization/week7</loc>
+<lastmod>2022-10-09T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://saathvika-ajith.github.io/APCSA-Fastpages/</loc>
