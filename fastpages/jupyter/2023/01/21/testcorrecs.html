@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      8 min read
     
 </span></p>
 
@@ -137,7 +137,113 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="3)-Walked-Around-and-Saw-Art">3) Walked Around and Saw Art<a class="anchor-link" href="#3)-Walked-Around-and-Saw-Art"> </a></h2><p>yea we did that</p>
+<h2 id="Overall-Score:-47/66">Overall Score: 47/66<a class="anchor-link" href="#Overall-Score:-47/66"> </a></h2><h3 id="Time-Taken:-Over-2-Hours">Time Taken: Over 2 Hours<a class="anchor-link" href="#Time-Taken:-Over-2-Hours"> </a></h3><table>
+<thead><tr>
+<th>Question</th>
+<th>Wrong Answer</th>
+<th>Right Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Q1 addOneToEverything enhanced for loop</td>
+<td>Answer B. Incorrect. The given method increases each element of the array numbers by 1. Code segment I does not work as intended. It assigns num a copy of each element of numbers. When num is incremented, it does not change the corresponding value stored in numbers. Code segment III does not work as intended, as it attempts to use num as an index rather than as a copy of a value from the array.</td>
+<td>Answer E. Correct. The given method increases each element of the array numbers by 1. Code segment I does not work as intended. It assigns num a copy of each element of numbers. When num is incremented, it does not change the corresponding value stored in numbers. Code segment II does not compile, as the variable j has not been declared. Code segment III does not work as intended, as it attempts to use num as an index rather than as a copy of a value from the array.</td>
+</tr>
+<tr>
+<td>Q9 Compare blue red yellow code segments</td>
+<td>Answer E. Incorrect. When choice is greater than 10, code segment A will print "blue" and the else statements are not executed. Code segment B will print "blue" but will then execute the next if statement and print "yellow", thereby giving different output for initial values that are greater than 10. Therefore, there are some initial values for choice that will cause the two code segments to produce different output.</td>
+<td>Answer C. Correct. When choice is greater than 10, code segment A will print "blue" and the else statements are not executed. Code segment B will print "blue" but will then execute the next if statement and print "yellow", thereby giving different output for initial values that are greater than 10.</td>
+</tr>
+<tr>
+<td>Q12 Compound Boolean expression with variables x and y</td>
+<td>Answer C. Incorrect. This expression will evaluate to false whenever y is less than 10000 regardless of whether x is in the correct range between 1000 and 1500.</td>
+<td>Answer A. Correct. The original expression evaluates to true when either y is greater than 10000 or x is between 1000 and 1500. If the value of y is greater than 10000, this equivalent expression will evaluate to true since it is used in both of the or (</td>
+<td></td>
+<td>) expressions. If y is not greater than 10000, the only way the equivalent expression can evaluate to true is if x is between 1000 and 1500.</td>
+</tr>
+<tr>
+<td>Q16 count 2D array columns</td>
+<td>Answer E. Incorrect. The row and column indices of arr must be of type int. The variable row is of type int[].</td>
+<td>Answer C. Correct. Two-dimensional arrays are stored as arrays of one-dimensional arrays. Line 8 is intended to assign to row, a one-dimensional array of int values, a single row of the two-dimensional array arr. The original version of line 8 attempts to assign a row of col, but col is not a two-dimensional array.</td>
+</tr>
+<tr>
+<td>Q20 equivalent output from for loops</td>
+<td>Answer A. Incorrect. The given code segment prints 1357, while this code segment prints 0246.</td>
+<td>Answer E. Correct. The given code segment starts when k is 1 and prints every other value as long as k is less than or equal to 7. This code segment starts when k is 1 and prints every other value as long as k is less than or equal to 8. Both code segments print 1357.</td>
+</tr>
+<tr>
+<td>Q21 error calling method in Password class</td>
+<td>Answer A. Incorrect. The private variable is accessed using a public constructor and a public method, which can be called from outside the Password class.</td>
+<td>Answer E. Correct. The reset method has return type void, so it does not return a value.</td>
+</tr>
+<tr>
+<td>Q30 error when inserting val in numList</td>
+<td>Answer D. Incorrect. The code segment correctly inserts 3 in numList to produce [1, 2, 2, 3, 3].</td>
+<td>Answer E. Correct. Since val is greater than every element in numList, index will continue to increase until it is 4. Once index is 4, an IndexOutOfBoundsException will occur because there is no element at index 4.</td>
+</tr>
+<tr>
+<td>Q32 findLongest consecutive target fix</td>
+<td>Answer C. Incorrect. Insert the statement lenCount = 0; between lines 10 and 11.</td>
+<td>Answer E. Correct. Insert the statement lenCount = 0; between lines 12 and 13.</td>
+</tr>
+<tr>
+<td>Q36 GridWorld getDirection and getMoveLocation calls</td>
+<td>Answer E. Incorrect. Lines 4 and 5 only</td>
+<td>Answer C. Correct. Line 4 only.</td>
+</tr>
+<tr>
+<td>Q37 if and compound boolean equivalence</td>
+<td>Answer A. Incorrect. The statement assigns a different value to b2 than the code segment assigns to b1 when num is between -100, exclusive, and 0, inclusive, or when num is less than -100.</td>
+<td>Answer E. Correct. In the body of the first if clause in the code segment, b1 retains the value true if num is between 0 and 100, exclusive. In the body of the else clause, b1 retains the value true if num is less than -100. The statement assigns true to b2 if num is less than -100 or between 0 and 100, exclusive.</td>
+</tr>
+<tr>
+<td>Q40 maxHelper with int array instance variable fix</td>
+<td>Answer D. Incorrect. Insert the following statement between Line 1 and Line 2. if (numVals == 1) return nums(0);</td>
+<td>Answer B. Correct. Insert the following statement before Line 1. if (numVals == 1 return nums(0);</td>
+</tr>
+<tr>
+<td>Q44 Points class</td>
+<td>Answer E. Incorrect. The variable value is the parameter passed to the incrementPoints method.</td>
+<td>Answer D. Correct. The variables n1 and n2 are not instance variables of the Points class, nor are they defined in the incrementPoints method. The instance variables num1 and num2 should have been used instead of n1 and n2.</td>
+</tr>
+<tr>
+<td>Q47 Print One Two Three Four</td>
+<td>Answer C. Incorrect. This change would print "OneTwoThree" on the first line and "Four" on the second line.</td>
+<td>Answer B. Correct. As is, the code segment prints all four strings on the same line. Changing print to println in line 2 will move the cursor to the next line after "Two" is printed.</td>
+</tr>
+<tr>
+<td>Q53 recursive mystery method</td>
+<td>Answer C. Incorrect. The condition in the while loop header should be x &lt; n - 1.</td>
+<td>Answer A. Correct. The variable total should be initialized to 1.</td>
+</tr>
+<tr>
+<td>Q54 recursive String method</td>
+<td>Answer E. Incorrect. This method call returns false because the third character is lexicographically less than the fourth character of the string.</td>
+<td>Answer D. Correct. If the first character of str is lexicographically greater than the second character of str, the method returns the result of the recursive call with a parameter that contains all but the first character of str. If the first character of str is lexicographically less than or equal to the second character of str, the method returns false. If no such character pair (where the first character of str is lexicographically less than or equal to the second character of str) is found, the base case is reached and the value true is returned.</td>
+</tr>
+<tr>
+<td>Q55 Relational expressions with ints</td>
+<td>Answer D. Incorrect. a != b.</td>
+<td>Answer C. Correct. a == b.</td>
+</tr>
+<tr>
+<td>Q56 removeDups with ArrayList fix</td>
+<td>Answer A. Incorrect. k should be initialized to 0 at the beginning of the method.</td>
+<td>Answer E. Correct. There should be an else before the statement k++;.</td>
+</tr>
+<tr>
+<td>Q63 traverse arr1 and minArray</td>
+<td>Answer D. Incorrect. The code segment is intended to leave arr1 unchanged. Elements of arr1 will be modified by the statement on the original line 5 even if its position in the code segment is changed.</td>
+<td>Answer C. Correct. Line 5 modifies an element of arr1 if that element is smaller than the corresponding element of minArray, which is NOT what is intended, since arr1 should remain unchanged.</td>
+</tr>
+<tr>
+<td>Q64 two traversals of arr</td>
+<td>Answer A. Incorrect. The given code segment prints the array elements in order from left to right using an enhanced for loop. Code segment I uses elements as indices. The first element of arr is 1, and arr(1) is 2; the second element is 2, and arr(2) is 4; the third element is 4, and arr(4) is 3; etc. Code segment III prints the array elements in order from left to right using a for loop.</td>
+<td>Answer B. Correct. The given code segment prints the array elements in order from left to right using an enhanced for loop. Code segment I uses elements as indices. The first element of arr is 1, and arr(1) is 2; the second element is 2, and arr(2) is 4; the third element is 4, and arr(4) is 3; etc. Code segment II prints the indices 0 to 4 in order. Code segment III prints the array elements in order from left to right using a for loop.</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>
