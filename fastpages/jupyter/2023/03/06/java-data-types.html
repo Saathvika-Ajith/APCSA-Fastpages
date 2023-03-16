@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      9 min read
     
 </span></p>
 
@@ -117,6 +117,8 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#Math.random()">Math.random() </a></li>
 <li class="toc-entry toc-h3"><a href="#DoNothingByValue">DoNothingByValue </a></li>
 <li class="toc-entry toc-h3"><a href="#AP-CSA-FRQ-2017-Methods-and-Control-Structures">AP CSA FRQ 2017 Methods and Control Structures </a></li>
+<li class="toc-entry toc-h3"><a href="#FRQ-4-Solution">FRQ 4 Solution </a></li>
+<li class="toc-entry toc-h3"><a href="#Discussion-of-Methods-&-Control-Structures:">Discussion of Methods &amp; Control Structures: </a></li>
 </ul>
 </li>
 </ul><!--
@@ -559,6 +561,88 @@ Goodbye!
 </h3>
 <ul>
 <li><a href="https://apcentral.collegeboard.org/media/pdf/ap-computer-science-a-frq-2017.pdf">https://apcentral.collegeboard.org/media/pdf/ap-computer-science-a-frq-2017.pdf</a></li>
+</ul>
+<h3 id="FRQ-4-Solution">
+<a class="anchor" href="#FRQ-4-Solution" aria-hidden="true"><span class="octicon octicon-link"></span></a>FRQ 4 Solution<a class="anchor-link" href="#FRQ-4-Solution"> </a>
+</h3>
+<ul>
+<li>part a:</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">static</span> <span class="n">Position</span> <span class="nf">findPosition</span><span class="p">(</span><span class="kt">int</span> <span class="n">num</span><span class="p">,</span> <span class="kt">int</span><span class="o">[][]</span> <span class="n">intArr</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// input is entered and saved as num</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">intArr</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// iterates through each  row</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">col</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">col</span> <span class="o">&lt;</span> <span class="n">intArr</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">col</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// iterates through each column in the row</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">intArr</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span> <span class="o">==</span> <span class="n">num</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// if value = num</span>
+            <span class="k">return</span> <span class="k">new</span> <span class="n">Position</span><span class="p">(</span><span class="n">row</span><span class="p">,</span> <span class="n">col</span><span class="p">);</span> <span class="c1">// return the value</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>part b:</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">static</span> <span class="n">Position</span><span class="o">[][]</span> <span class="nf">getSuccessorArray</span><span class="p">(</span><span class="kt">int</span><span class="o">[][]</span> <span class="n">intArr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">Position</span><span class="o">[][]</span> <span class="n">newArr</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Position</span><span class="o">[</span><span class="n">intArr</span><span class="p">.</span><span class="na">length</span><span class="o">][</span><span class="n">intArr</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="o">]</span><span class="p">;</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="n">intArr</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">col</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">col</span> <span class="o">&lt;</span> <span class="n">intArr</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">col</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// iterates through rows and columns</span>
+            <span class="n">newArr</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span> <span class="o">=</span> <span class="n">findPosition</span><span class="p">(</span><span class="n">intArr</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]+</span><span class="mi">1</span><span class="p">,</span> <span class="n">intArr</span><span class="p">);</span> <span class="c1">// returns the coordinates of where that specific number is in the first array</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+<span class="k">return</span> <span class="n">newArr</span><span class="p">;</span> <span class="c1">// displays as a whole new array of coordinates</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Discussion-of-Methods-&amp;-Control-Structures:">
+<a class="anchor" href="#Discussion-of-Methods-&amp;-Control-Structures:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Discussion of Methods &amp; Control Structures:<a class="anchor-link" href="#Discussion-of-Methods-&amp;-Control-Structures:"> </a>
+</h3>
+<ul>
+<li>To iterate and perform operations throughout the 2D there are multiple For Loops that iterate through each value of the array to perform operations on it.</li>
+<li>
+<code>findPosition()</code> and <code>getSuccessorArray()</code> are both methods that complete a specific task. </li>
 </ul>
 
 </div>
