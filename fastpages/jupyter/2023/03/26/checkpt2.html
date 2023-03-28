@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      18 min read
+      17 min read
     
 </span></p>
 
@@ -1357,7 +1357,7 @@ Mixed data: Start seven slimy snakes sallying slowly slithered southward 0 1 2 3
 <span class="n">mergedQueue</span><span class="p">.</span><span class="na">addAll</span><span class="p">(</span><span class="n">questionNums1</span><span class="p">);</span>
 <span class="n">mergedQueue</span><span class="p">.</span><span class="na">addAll</span><span class="p">(</span><span class="n">questionNums2</span><span class="p">);</span>
 
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Python Question # Order: "</span> <span class="o">+</span> <span class="n">mergedQueue</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Question # Order: "</span> <span class="o">+</span> <span class="n">mergedQueue</span><span class="p">);</span>
 </pre></div>
 
     </div>
@@ -1370,7 +1370,7 @@ Mixed data: Start seven slimy snakes sallying slowly slithered southward 0 1 2 3
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Python Question # Order: [1, 2, 3, 4, 5, 6, 7, 8]
+<pre>Question # Order: [1, 2, 3, 4, 5, 6, 7, 8]
 </pre>
 </div>
 </div>
@@ -1425,10 +1425,10 @@ Mixed data: Start seven slimy snakes sallying slowly slithered southward 0 1 2 3
 
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">Queue</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">queue</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LinkedList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
-        <span class="n">queue</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Python"</span><span class="p">);</span>
-        <span class="n">queue</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"JavaScript"</span><span class="p">);</span>
-        <span class="n">queue</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"C#"</span><span class="p">);</span>
-        <span class="n">queue</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Java"</span><span class="p">);</span>
+        <span class="n">queue</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"ArrayList"</span><span class="p">);</span>
+        <span class="n">queue</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Array"</span><span class="p">);</span>
+        <span class="n">queue</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"2D Array"</span><span class="p">);</span>
+        <span class="n">queue</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"Int"</span><span class="p">);</span>
 
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Original queue: "</span> <span class="o">+</span> <span class="n">queue</span><span class="p">);</span>
 
@@ -1450,8 +1450,8 @@ Mixed data: Start seven slimy snakes sallying slowly slithered southward 0 1 2 3
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Original queue: [Python, JavaScript, C#, Java]
-Shuffled queue: [Java, Python, C#, C#]
+<pre>Original queue: [ArrayList, Array, 2D Array, Int]
+Shuffled queue: [Array, Int, ArrayList, Array]
 </pre>
 </div>
 </div>
@@ -1513,55 +1513,6 @@ Shuffled queue: [Java, Python, C#, C#]
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Original Question Numbers: []
 Reversed Question Numbers: [5, 4, 3, 2, 1]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Queue</span><span class="p">;</span>
-<span class="kn">import</span> <span class="nn">java.util.Stack</span><span class="p">;</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Languages</span> <span class="p">{</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">reverse</span><span class="p">(</span><span class="n">Queue</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">queue</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">Stack</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">stack</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Stack</span><span class="o">&lt;&gt;</span><span class="p">();</span>
-<span class="c1">//The reverse method creates a new Stack object, </span>
-<span class="c1">//then iterates through the elements in the queue, removing them one by one and pushing them onto the stack</span>
-        <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">queue</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">())</span> <span class="p">{</span>
-            <span class="n">stack</span><span class="p">.</span><span class="na">push</span><span class="p">(</span><span class="n">queue</span><span class="p">.</span><span class="na">remove</span><span class="p">());</span>
-        <span class="p">}</span>
-
-        <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">stack</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">())</span> <span class="p">{</span>
-            <span class="n">queue</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">stack</span><span class="p">.</span><span class="na">pop</span><span class="p">());</span> <span class="c1">//the method iterates </span>
-            <span class="c1">//through the elements in the stack, popping them off one by one and adding them back to the queue</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Reversed queue of languages: "</span><span class="o">+</span><span class="n">queue</span><span class="p">);</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Reversed queue of languages: [Java, C#, JavaScript, Python]
 </pre>
 </div>
 </div>
