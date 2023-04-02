@@ -1398,28 +1398,11 @@ Mixed data: Start seven slimy snakes sallying slowly slithered southward 0 1 2 3
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Queue</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.util.*</span><span class="p">;</span>
 <span class="kn">import</span> <span class="nn">java.util.LinkedList</span><span class="p">;</span>
 <span class="kn">import</span> <span class="nn">java.util.Random</span><span class="p">;</span>
 
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">ShuffleQueue</span> <span class="p">{</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">shuffle</span><span class="p">(</span><span class="n">Queue</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">queue</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">Random</span> <span class="n">rand</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Random</span><span class="p">();</span>
-<span class="c1">//static shuffle method that takes a Queue of strings as its argument and shuffles the elements</span>
-        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">queue</span><span class="p">.</span><span class="na">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-            <span class="kt">int</span> <span class="n">randomIndex</span> <span class="o">=</span> <span class="n">rand</span><span class="p">.</span><span class="na">nextInt</span><span class="p">(</span><span class="n">queue</span><span class="p">.</span><span class="na">size</span><span class="p">());</span>
-            <span class="n">String</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">queue</span><span class="p">.</span><span class="na">peek</span><span class="p">();</span>
-            <span class="c1">//view or peek at the element at the front of the queue without removing it</span>
-            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">randomIndex</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-                <span class="n">queue</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">queue</span><span class="p">.</span><span class="na">remove</span><span class="p">());</span>
-            <span class="p">}</span><span class="c1">//iterating through the queue and swapping</span>
-            <span class="c1">// each element with another element at a random position in the queue.</span>
-            <span class="n">queue</span><span class="p">.</span><span class="na">remove</span><span class="p">();</span>
-            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">randomIndex</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-                <span class="n">queue</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">queue</span><span class="p">.</span><span class="na">remove</span><span class="p">());</span>
-            <span class="p">}</span>
-            <span class="n">queue</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">temp</span><span class="p">);</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
     <span class="c1">//Random object to generate random indices within the size of the queue</span>
     <span class="c1">//combination of remove and add methods to move elements around in the queue</span>
 
@@ -1432,9 +1415,15 @@ Mixed data: Start seven slimy snakes sallying slowly slithered southward 0 1 2 3
 
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Original queue: "</span> <span class="o">+</span> <span class="n">queue</span><span class="p">);</span>
 
-        <span class="n">shuffle</span><span class="p">(</span><span class="n">queue</span><span class="p">);</span>
+        <span class="n">String</span><span class="o">[]</span> <span class="n">array</span> <span class="o">=</span> <span class="n">queue</span><span class="p">.</span><span class="na">toArray</span><span class="p">(</span><span class="k">new</span> <span class="n">String</span><span class="o">[</span><span class="n">queue</span><span class="p">.</span><span class="na">size</span><span class="p">()</span><span class="o">]</span><span class="p">);</span>
+        <span class="n">Collections</span><span class="p">.</span><span class="na">shuffle</span><span class="p">(</span><span class="n">Arrays</span><span class="p">.</span><span class="na">asList</span><span class="p">(</span><span class="n">array</span><span class="p">));</span>
 
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Shuffled queue: "</span> <span class="o">+</span> <span class="n">queue</span><span class="p">);</span>
+        <span class="n">Queue</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">randomizedQueue</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LinkedList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">array</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">randomizedQueue</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">array</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Shuffled queue: "</span> <span class="o">+</span> <span class="n">randomizedQueue</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">}</span>
 <span class="n">ShuffleQueue</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
@@ -1451,7 +1440,7 @@ Mixed data: Start seven slimy snakes sallying slowly slithered southward 0 1 2 3
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Original queue: [ArrayList, Array, 2D Array, Int]
-Shuffled queue: [Array, Int, ArrayList, Array]
+Shuffled queue: [Int, 2D Array, Array, ArrayList]
 </pre>
 </div>
 </div>
@@ -1480,11 +1469,12 @@ Shuffled queue: [Array, Int, ArrayList, Array]
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="n">Queue</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">queue</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LinkedList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
 <span class="c1">//Create a new empty stack to store the elements of the queue</span>
-<span class="n">queue</span><span class="p">.</span><span class="na">offer</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
-<span class="n">queue</span><span class="p">.</span><span class="na">offer</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-<span class="n">queue</span><span class="p">.</span><span class="na">offer</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
-<span class="n">queue</span><span class="p">.</span><span class="na">offer</span><span class="p">(</span><span class="mi">4</span><span class="p">);</span>
-<span class="n">queue</span><span class="p">.</span><span class="na">offer</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">7</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">queue</span><span class="p">.</span><span class="na">offer</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Original Question Numbers: "</span> <span class="o">+</span> <span class="n">queue</span><span class="p">);</span>
 
 <span class="n">Stack</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">stack</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Stack</span><span class="o">&lt;&gt;</span><span class="p">();</span>
 <span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">queue</span><span class="p">.</span><span class="na">isEmpty</span><span class="p">())</span> <span class="p">{</span>
@@ -1497,7 +1487,6 @@ Shuffled queue: [Array, Int, ArrayList, Array]
 <span class="p">}</span><span class="c1">//Create a new empty queue to store the reversed elements</span>
 <span class="c1">// pop removes and returns the top element of the stack</span>
 
-<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Original Question Numbers: "</span> <span class="o">+</span> <span class="n">queue</span><span class="p">);</span>
 <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Reversed Question Numbers: "</span> <span class="o">+</span> <span class="n">reversedQueue</span><span class="p">);</span>
 </pre></div>
 
@@ -1511,8 +1500,8 @@ Shuffled queue: [Array, Int, ArrayList, Array]
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Original Question Numbers: []
-Reversed Question Numbers: [5, 4, 3, 2, 1]
+<pre>Original Question Numbers: [1, 2, 3, 4, 5, 6, 7]
+Reversed Question Numbers: [7, 6, 5, 4, 3, 2, 1]
 </pre>
 </div>
 </div>
