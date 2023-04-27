@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      9 min read
+      7 min read
     
 </span></p>
 
@@ -658,99 +658,6 @@ Car #2: Hyundai Palisade
 </div>
 </div>
 </div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">CarLab</span> <span class="p">{</span> <span class="c1">// CarLab is a class that represents a car</span>
-
-    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="p">;</span>
-
-    <span class="c1">// Hack: add columns for other attributes, (ex total mileage, model, make of car) demonstrating knowledge of different data types</span>
-
-    <span class="kd">private</span> <span class="kt">double</span> <span class="n">price</span><span class="p">;</span>
-    
-    <span class="kd">public</span> <span class="nf">CarLab</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">double</span> <span class="n">price</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">price</span> <span class="o">=</span> <span class="n">price</span><span class="p">;</span>
-        
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">getPrice</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">price</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">name</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kd">static</span> <span class="n">String</span> <span class="nf">cheaperCar</span><span class="p">(</span><span class="n">String</span> <span class="n">car1Name</span><span class="p">,</span> <span class="kt">double</span> <span class="n">car1Price</span><span class="p">,</span> <span class="n">String</span> <span class="n">car2Name</span><span class="p">,</span> <span class="kt">double</span> <span class="n">car2Price</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">CarLab</span> <span class="n">car1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CarLab</span><span class="p">(</span><span class="n">car1Name</span><span class="p">,</span> <span class="n">car1Price</span><span class="p">);</span>
-        <span class="n">CarLab</span> <span class="n">car2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">CarLab</span><span class="p">(</span><span class="n">car2Name</span><span class="p">,</span> <span class="n">car2Price</span><span class="p">);</span>
-        
-        <span class="k">if</span> <span class="p">(</span><span class="n">car1</span><span class="p">.</span><span class="na">getPrice</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">car2</span><span class="p">.</span><span class="na">getPrice</span><span class="p">())</span> <span class="p">{</span>
-            <span class="k">return</span> <span class="n">car1</span><span class="p">.</span><span class="na">getName</span><span class="p">();</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-            <span class="k">return</span> <span class="n">car2</span><span class="p">.</span><span class="na">getName</span><span class="p">();</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-    
-    <span class="kd">public</span> <span class="kd">static</span> <span class="n">String</span> <span class="nf">cheaperCar</span><span class="p">(</span><span class="n">CarLab</span> <span class="n">car1</span><span class="p">,</span> <span class="n">CarLab</span> <span class="n">car2</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// Overloading the cheaperCar method to allow both String and CarLab objects to be passed in</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">car1</span><span class="p">.</span><span class="na">getPrice</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">car2</span><span class="p">.</span><span class="na">getPrice</span><span class="p">())</span> <span class="p">{</span>
-            <span class="k">return</span> <span class="n">car1</span><span class="p">.</span><span class="na">getName</span><span class="p">();</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-            <span class="k">return</span> <span class="n">car2</span><span class="p">.</span><span class="na">getName</span><span class="p">();</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-
-    <span class="c1">// Hack: demonstrate another operation on a different data type</span>
-
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">acceleration</span><span class="p">(</span><span class="kt">double</span> <span class="n">s1</span><span class="p">,</span> <span class="kt">double</span> <span class="n">s2</span><span class="p">,</span> <span class="kt">double</span> <span class="n">time</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="na">abs</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span> <span class="p">((</span><span class="n">s2</span> <span class="o">-</span> <span class="n">s1</span><span class="p">)</span> <span class="o">/</span> <span class="n">time</span><span class="p">)));</span>
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span><span class="p">(</span> <span class="s">"{"</span> <span class="o">+</span> 
-            <span class="s">"\"name\": "</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span>
-            <span class="s">"\"price\": "</span> <span class="o">+</span>  <span class="n">price</span> <span class="o">+</span>
-            <span class="s">"}"</span> <span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">String</span> <span class="n">cheaperCarName</span> <span class="o">=</span> <span class="n">cheaperCar</span><span class="p">(</span><span class="s">"Toyota"</span><span class="p">,</span> <span class="mf">20000.0</span><span class="p">,</span> <span class="s">"Honda"</span><span class="p">,</span> <span class="mf">25000.0</span><span class="p">);</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The cheaper car is: "</span> <span class="o">+</span> <span class="n">cheaperCarName</span><span class="p">);</span>
-
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The acceleration is: "</span> <span class="o">+</span> <span class="n">acceleration</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="o">+</span> <span class="s">" m/s^2"</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-<span class="n">CarLab</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The cheaper car is: Toyota
-The acceleration is: 6 m/s^2
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
     
     
 <div class="cell border-box-sizing code_cell rendered">
